@@ -11,16 +11,16 @@ function setup() {
  
  bullet.shapeColor="white";
  wall.shapeColor=color(80,80,80);
-
+speed=random(223.321);
+  weight=random(30,52);
+  thickness=random(22,83);
+  bullet.velocityX=speed;
 
 }
 
 function draw() {
   background(0);  
-  speed=random(223.321);
-  weight=random(30,52);
-  thickness=random(22,83);
-  bullet.velocityX=speed;
+  
   if(hascollided(bullet,wall))
   {
     bullet.velocityX=0;
